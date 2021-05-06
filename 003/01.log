@@ -1,0 +1,5 @@
+size of short = 2
+size of long = 8
+size of int = 4
+size of float = 4
+size of double = 8
