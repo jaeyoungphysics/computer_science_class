@@ -1,0 +1,9 @@
+
+cd inc
+cat exercise22.h
+cd ..
+mkdir lib_a
+cp ../exercise21lib.a lib_a/libexercise22
+gcc exercise22.C -I ./inc -L./lib_a -lexercise22 -o exercise22
+
+

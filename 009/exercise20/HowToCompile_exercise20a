@@ -1,0 +1,10 @@
+
+Method 1
+gcc -c exercise20c.C -o exercise20c.o
+gcc exercise20a.C exercise20c.o -o exercise20a
+
+Method 2
+gcc exercise20a.C exercise20c.C -o exercise20a
+
+
+

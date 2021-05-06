@@ -1,0 +1,7 @@
+
+gcc -c exercise21a.C -o exercise21a.o
+gcc -c exercise21b.C -o exercise21b.o
+ar rvs exercise21lib.a exercise21a.o exercise21b.o
+gcc exercise21c.C exercise21lib.a -o exercise21c
+
+

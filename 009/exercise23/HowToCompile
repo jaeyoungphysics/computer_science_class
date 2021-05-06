@@ -1,0 +1,13 @@
+
+gcc -c -fPIC exercise23a.C -o exercise23a.o
+gcc -c -fPIC exercise23b.C -o exercise23b.o
+gcc -shared exercise23a.o exercise23b.o -o exercise23.so
+mkdir lib
+mv exercise23.so lib/libexercise23.so
+cat inc/exercise23.h
+
+gcc exercise23c.C -I./inc -L./lib -lexercise23  -o exercise23
+export LD_LIBRARY_PATH=./lib
+./exercise23
+
+
