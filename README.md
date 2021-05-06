@@ -1,1 +1,1 @@
-# coputer_science_class
+# computer_science_class
